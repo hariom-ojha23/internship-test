@@ -5,7 +5,7 @@ const table = document.getElementById('table-body')
 // fetching data from database
 const getData = async () => {
   try {
-    const response = await fetch('http://localhost:5000/')
+    const response = await fetch('http://localhost:5000/data')
     data = await response.json()
   } catch (error) {
     console.log(`Error: ${error.message}`)

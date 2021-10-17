@@ -17,10 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
       rel="stylesheet"
     />
-    <title>Hodlinfo</title>
+    <title>Hodlinfo | &#8377; 42,80,613</title>
   </head>
   <body>
-    <div id="root" class="theme-dark">
+    <div id="root">
       <nav class="navbar">
         <div class="navbar-brand nav-section nav-section-1">
           <a href="#">
@@ -67,7 +67,7 @@
       </nav>
       <div
         style="
-          padding-bottom: 50px;
+          padding: 0 10px 30px;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -112,21 +112,26 @@
           <table>
             <thead>
               <tr>
-                <th>#</th>
-                <th>name</th>
-                <th>Last</th>
-                <th>Buy/Sell Price</th>
-                <th>volume</th>
-                <th>base_unit</th>
+                <th scope="col">#</th>
+                <th scope="col">name</th>
+                <th scope="col">Last</th>
+                <th scope="col">Buy/Sell Price</th>
+                <th scope="col">volume</th>
+                <th scope="col">base_unit</th>
               </tr>
             </thead>
             <tbody id="table-body"></tbody>
           </table>
         </main>
         <section
-          style="padding-bottom: 10px; display: flex; justify-content: center"
+          style="
+            padding: 10px;
+            display: flex; 
+            justify-content: center;
+            width: 100%;
+          "
         >
-        <a href='https://www.algorand.com/futurefi/' target="_blank">
+        <a class='learn-more-img-link' href='https://www.algorand.com/futurefi/' target="_blank">
           <img
             class="learn-more-img"
             src="./images/lastImg.jpg"

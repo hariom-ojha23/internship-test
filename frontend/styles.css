@@ -87,7 +87,7 @@ h6 {
 .timer {
   width: 2rem;
   height: 2rem;
-  border: 2px solid white;
+  border: 3px solid white;
   border-radius: 50%;
   display: flex;
   flex-direction: row;
@@ -173,6 +173,10 @@ input:checked + .slider:before {
 
 /* header */
 
+header {
+  width: 100%;
+}
+
 section {
   margin: 1em;
 }
@@ -235,7 +239,8 @@ main {
 }
 
 table {
-  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
   border-collapse: separate;
   border-spacing: 0 1em;
   margin: 0;
@@ -272,14 +277,24 @@ tr td:last-child {
 
 /* last image learn more */
 
+.learn-more-img-link {
+  padding: 10px;
+  width: 100%;
+}
+
 .learn-more-img {
   width: 100%;
 }
 
 /* footer */
 
+footer {
+  width: 100%;
+}
+
 footer p {
   color: gray;
+  font-size: 14px;
 }
 
 @media (max-width: 960px) {

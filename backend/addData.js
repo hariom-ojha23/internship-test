@@ -4,7 +4,7 @@ import Data from './models/data.js'
 let fetchData = []
 
 const getData = async () => {
-  await fetch('https://api.wazirx.com/api/v2/tickers')
+  await fetch(process.env.API)
     .then((res) => res.json())
     .then((res) => {
       fetchData = Object.keys(res)

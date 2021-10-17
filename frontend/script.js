@@ -19,8 +19,8 @@ const putDataInTable = async () => {
     el.innerHTML = `
         <td>${index + 1}</td>
         <td>${res.name}</td>
-        <td>${res.last}</td>
-        <td>${res.buy + ' / ' + res.sell}</td>
+        <td>${'&#8377; ' + res.last}</td>
+        <td>${'&#8377; ' + res.buy + ' / ' + '&#8377; ' + res.sell}</td>
         <td>${res.volume}</td>
         <td>${res.base_unit}</td>
         `

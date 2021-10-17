@@ -1,22 +1,21 @@
 import express from 'express'
+import cors from 'cors'
 import dotenv from 'dotenv'
 import addData from './addData.js'
 import connectDB from './config/db.js'
+import dataRoute from './routes/dataRoute.js'
 
 const app = express()
 
 dotenv.config()
+connectDB()
+addData()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+app.use(cors())
 
-connectDB()
-
-app.get('/', (req, res) => {
-  res.send('API is running')
-})
-
-addData()
+app.use('/', dataRoute)
 
 const port = process.env.PORT || 5000
 

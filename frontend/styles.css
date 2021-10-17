@@ -235,8 +235,7 @@ main {
 }
 
 table {
-  width: 100%;
-  max-width: 100%;
+  min-width: 100%;
   border-collapse: separate;
   border-spacing: 0 1em;
   margin: 0;

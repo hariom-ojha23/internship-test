@@ -1,5 +1,6 @@
 import express from 'express'
 import dotenv from 'dotenv'
+import addData from './addData.js'
 import connectDB from './config/db.js'
 
 const app = express()
@@ -15,7 +16,7 @@ app.get('/', (req, res) => {
   res.send('API is running')
 })
 
-// getData()
+addData()
 
 const port = process.env.PORT || 5000
 

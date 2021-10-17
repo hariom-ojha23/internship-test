@@ -10,7 +10,7 @@
 
 ## Feature of this app :
 * fetching data from given api
-* storing top 10 data into database
+* if data does not exist in database then storing top 10 data into database
 * created route to fetch data from database to frontend
 * fetching data from database to frontend
 * showing top 5 data in frontend table
